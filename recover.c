@@ -39,6 +39,7 @@ int main(int argc, char *argv[])
                 fclose(output);
             }
             
+            sprintf(filename, "%03d.jpg", count++);
             output = fopen(filename, "wb");
             
             if (output == NULL)
